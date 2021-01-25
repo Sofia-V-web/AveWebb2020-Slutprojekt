@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Beställ</title>
+    <link rel="stylesheet" media="(max-width:600px)" type="text/css" href="style-small.css">
+    <link rel="stylesheet" media="(min-width:601px)" type="text/css" href="style-medium.css">
+    <link rel="stylesheet" media="(min-width:700px)" type="text/css" href="style-large.css">
+
+</head>
+<body id="orders">
+    <header>
+        <div class="headerDiv">
+            <img src="images/kanelbullar.jpg"class="headerImageDiv" alt="kanelbullar">
+            <div class="headerDivA"><a href="index.html"><h1>Bageri</h1></a></div>
+        <nav>
+            <div class="dropdown">
+                    <img src="svg/menuWhite.svg"onclick="myFunction()" class="NavImage"alt="meny">
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="menu.html">Sortiment</a>
+                        <a href="nyhet.html">Säsongens nyhet</a>
+                        <a href="orders.html">Beställ</a>
+                        <a href="contact.html">Kontakt</a>
+                        <a href="about.html">Om oss</a>
+                    </div>
+            </div>
+            <div class="mediumNavBar">
+                <ul>
+                <li><a href="menu.html">Sortiment</a></li>
+                <li><a href="nyhet.html">Säsongens nyhet</a></li>
+                <li><a href="orders.html">Beställ</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+                <li><a href="about.html">Om oss</a></li>
+                </ul>
+            </div>
+        </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="mainText">
+            <h3>Beställ</h3>
+             <p>Vi behöver din beställniing senast kl 15:00 dagen innan avhämtning. För beställning samma dag ring 08-12 34 56 eller maila info@ordersbageri.se</p>
+        </div>
+        <div id="orderDiv">
+        <form name="myForm" onsubmit="return validateForm()" method="post">
+            <input type="text" name="fname" placeholder="Namn"><br>
+            <input type="text" name="femail" placeholder="E-post"><br>
+            <input type="text" name="ftelefon" placeholder="Telefon"><br>
+            <input type="text" name="fdatum" placeholder="Upphämtning yy/mm/dd"><br>
+            <textarea type="text" name="forder" placeholder="Beställning"></textarea><br>
+            <input type="submit" onclick="Tack();" value="Skicka" class="Submitbtn">
+        </form>
+        </div>
+    </main>
+ 
+    <footer>
+        
+        <div class="footerDiv shortFooter">
+            <div class="social">
+                <img src="svg/facebook.svg" class="fb">
+                <img src="svg/instagram.svg" class="insta">
+            </div>
+            <div class="footerMeny">
+                <ul>
+                    <li><a href="menu.html">Sortiment</a></li>
+                    <li><a href="nyhet.html">Säsongens nyhet</a></li>
+                    <li><a href="orders.html">Beställ</a></li>
+                    <li><a href="contact.html">Kontakta oss:<br> Tel: 08- 12 34 56<br> infor@bageri.se</a></li>
+                    <li><a href="about.html">Om oss</a></li>
+    
+                </ul>
+            </div>
+            
+        </div>
+        </footer>
+    <script src="script.js"></script>
+</body>
+</html>

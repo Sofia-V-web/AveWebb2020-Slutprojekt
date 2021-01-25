@@ -1,0 +1,400 @@
+@media (min-width:835px){
+    @font-face {
+        font-family: Lobster_Two;
+        src: url(Lobster_Two/LobsterTwo-Regular.ttf);
+    }
+    body {
+        position: relative;
+        width: 100%;
+        height: 200px; /*originally 700px*/
+        background: #f6f4ff;
+        margin: 0;
+        text-align: center;
+        font-family: Lobster_Two;
+    }
+    .longBody{
+        height: 1475px;
+    }                     
+    #mediumBody{
+        height: 700px;
+    }
+
+    /*header*/
+    h1 {
+        color: #F6F4FF;
+        font-size: 90px;
+        text-shadow: 2px 2px 0  #000000;
+    }
+    .headerDiv{
+        position: absolute;
+        width: 100%;
+        height: 80vh;
+        top: 0;
+        left: 0;
+    }
+    .headerImageDiv {
+        width: 100%;
+        height: 80vh;
+        position: absolute;
+        left: 0;
+        top: -273px;
+        bottom: 0%;
+        background-position: 70% 50%;
+        background-size: cover;
+    }
+    .headerDivA{
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        }
+    .headerDivA a{
+            text-decoration: none;
+        }
+        /*nav*/
+        .mediumNavBar{
+            position: absolute;
+            background-color: black;
+            opacity: 70%;
+            top: 36.5vh;
+            width: 100%;
+            height: 8vh;
+        }
+        .mediumNavBar ul{
+            list-style-type: none;
+            margin: 1em;
+        }
+        .mediumNavBar li{
+            display: inline-block;
+            opacity: 100%;
+            padding: 0 2em ;
+        }
+        .mediumNavBar a {
+            opacity: 100%;
+            text-decoration: none;
+            color: #828187;
+            font-size: 20px;
+        }
+        .mediumNavBar li :hover{
+            opacity: 100%;
+            color: #fff;
+        }
+        h3 {
+            font-size: 35px;
+        }
+        .dropdown {
+            display: none;
+        }
+
+        /*main*/
+main p{
+    color: black;
+    font-size: 30px;
+}
+.mainText{
+    position: absolute;
+    width: 90%;
+    height: auto;
+    top: 43vh;
+    left: 4em;
+}
+.alert {
+    position: absolute;
+    width: 100%;
+    height: 4vh;
+    top: 44vh;
+    padding: 1px;
+    background-color: #171520;
+    color: #F6F4FF;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.closebtn{
+    margin: 0.05em 0.5em;
+    color: #F6F4FF;
+    float: right;
+    font-size: 20px;
+}
+#welcome{
+    position: absolute;
+    width: 100%;
+    height: 178px;
+    left: 2vw;
+    top:46vh;
+}
+/*Slideshow*/
+#slideshow {
+    position: absolute;
+    width: 100%;
+    height: 450px;
+}
+.slide{
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    left: 0px;
+    top: 70vh;
+    overflow: hidden;
+    /*display: flex;*/
+    align-items: center;
+    
+}
+.slide img{
+    width: 100%;
+    height: 542px;
+    object-position: 50% 50%;
+    object-fit: cover;
+    justify-content: center;
+
+}
+.text{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:#fff;
+    font-size: 30px;
+    padding: 15% 1%;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    font-weight: bold;
+    line-height: 18px;
+    text-align: center;
+    text-shadow: 2px 4px 4px #000000;
+}
+.dot {
+    position: relative;
+    cursor: pointer;
+    top: 120vh;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active{
+    background-color: #4e4b4b;
+  }
+.dot:hover {
+    background-color: #4e4b4b;
+  }
+#indexInfo{
+    position: absolute;
+    width: 100%;
+    height: 490px;
+    top: 134vh;
+    left: 0.5em;
+    font-size: 30px;
+}
+#orderImage{
+    position: absolute;
+    width: 100%;
+    height: 284px;
+    left: 0;
+    top: 175vh;
+    background-image: url(images/sortiment.jpg);
+    background-position: 50% 65%;
+    background-size: cover;
+}
+#orderImage a{
+    position: absolute;
+    width: 100%;
+    height: 236px;
+    text-decoration: none;
+    font-size: 30px;
+    left: 0.5em;
+    top: 25%;
+    color: #FFFFFF;
+    text-shadow: 2px 4px 4px #000000;
+    z-index: 2;
+}
+.sortiment{
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    top:25vh;
+    left: 0;
+}
+.sortimentDiv {
+    position: relative;
+    display: inline-block;
+    width: 384px;
+    height: 10vh;
+}
+.sortimentA{
+    position: relative;
+    display: inline-block;
+    width: 384px;
+    height: 10vh;
+}
+.sortimentB {
+    position: relative;
+    display: inline-block;
+    width: 384px;
+    height: 10vh;
+}
+#cupcake{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 32vh;
+    left: 20vw;
+}
+#cake {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 31vh;
+    left: 12vw;
+}
+#bread{
+    position: absolute;
+    width: 79px;
+    height: 79px;
+    top: 32.5vh;
+    left: 6vw;
+}
+.sortimentDiv a{
+    position: relative;
+    top: 45vh;
+    left: 15vw;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    font-weight: bold;
+}
+.sortimentA a{
+    position: relative;
+    top: 45vh;
+    left: 12vw;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    font-weight: bold;
+}
+.sortimentB a{
+    position: relative;
+    top: 44.5vh;
+    left: 6vw;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    font-weight: bold;
+}
+/*nyhet image*/
+.nyhetImageDiv{
+    position: absolute;
+    width: 100%;
+    height: 227px;
+    top: 79vh;
+    background-image: url(images/nyhet.jpg);
+    background-position: 50% 50%;
+    background-size: cover;    
+}
+#orderDiv{
+    position: absolute;
+    width: 90%;
+    height: 250px;
+    left: 33vw;
+    top: 72vh;
+}
+#orderDiv form{
+    float: left;
+    width: 35vw;
+}
+#orderDiv input{
+    width: 35vw;
+    height: 23px;
+}
+#orderDiv textarea{
+    margin: 0;
+    width: 35vw;
+    height: 17vh;
+    float: left;
+}
+#orderDiv button{
+    position: absolute;
+    top: 35vh;
+    display: block;
+    float: left;
+}
+
+
+/*footer*/
+
+.shortFooter{
+    top: 112vh;
+    position: absolute;
+    width: 100%;
+    height: 8vh;
+    left: 0;
+    bottom: 0;
+    background-color: #F8EACB;
+    display: flex;
+    float: left;
+}
+.footerDiv{
+    position: absolute;
+    width: 100%;
+    height: 8vh;
+    left: 0;
+    top: 211vh;
+    bottom: 0;
+    background-color: #F8EACB;
+    display: flex;
+    float: left;
+}
+.social{
+    top: 0;
+    left: 0;
+}
+.social ul{
+    list-style-type: none;
+    text-decoration: none;
+    color: #000;
+}
+.footerMeny{
+    position: absolute;
+    width: 100%;
+    height: 9vh;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+.footerMeny ul{
+    list-style-type: none;
+    
+    text-align: center;
+}
+.footerMeny li{
+    display: inline-block;
+    padding: 0.05em 4.5em;
+    top: 18%;
+}
+.footerMeny a{
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+}
+.fb{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 18%;
+    left: 1%;
+    
+}
+.insta{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 18%;
+    left:4%;
+}
+}
